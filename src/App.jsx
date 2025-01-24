@@ -49,7 +49,7 @@ export const App = () => {
 
   const isModified = sortField !== '' || reversed;
 
-  const visibleGoogs = getPreparedGoods(goodsFromServer, {
+  const visibleGoods = getPreparedGoods(goodsFromServer, {
     sortField,
     reversed,
   });
@@ -95,7 +95,7 @@ export const App = () => {
         )}
       </div>
 
-      {visibleGoogs.map(good => (
+      {visibleGoods.map(good => (
         <li data-cy="Good">{good}</li>
       ))}
     </div>
